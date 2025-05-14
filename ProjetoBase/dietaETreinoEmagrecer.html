@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="icon" href="./logo pjt.png" />
+  <meta charset="UTF-8">
+  <title>Escolha: Dieta ou Treino</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      background: linear-gradient(to right,gray,black);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 40px;
+      font-size: 2rem;
+      color: white;
+    }
+
+    .button {
+      display: inline-block;
+      margin: 10px;
+      padding: 15px 30px;
+      font-size: 18px;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      color: white;
+      background-color: #2ecc71;
+      transition: background 0.3s;
+      text-decoration: none;
+    }
+
+    .button:hover {
+      background-color: #27ae60;
+    }
+
+    .button.treino {
+      background-color: #3498db;
+    }
+
+    .button.treino:hover {
+      background-color: #2980b9;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Escolha uma opção:</h1>
+    <a href="dietaEmagrecer.html" class="button">Dieta</a>
+    <a href="treinoEmagrecer.html" class="button treino">Treino</a>
+  </div>
+</body>
+</html>

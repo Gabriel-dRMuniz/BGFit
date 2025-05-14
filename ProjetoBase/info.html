@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Informações</title>
+    <link rel="stylesheet" href="info.css" />
+    <link rel="icon" href="./logo pjt.png">
+  </head>
+<body>
+    <header>
+    </header>
+    <main>
+      <div id="divFormulario">
+        <h2>Digite as informações para prosseguir(Opcional)</h2>
+        <form id="formularioInfo">
+            <h3>Nome:</h3>
+            <input type="text" id="nome" placeholder="Digite o seu nome!">
+            <h3>Idade:</h3>
+            <input type="text" id="idade" placeholder="Digite a sua idade!">
+            <h3>Altura:</h3>
+            <input type="text" id="altura" placeholder="Digite a sua altura(ex:1.88)">
+            <h3>Peso:</h3>
+            <input type="text" id="peso" placeholder="Digite o seu peso!">  
+            <select id="opcoes">
+              <h3>Qual seu sexo?</h3>
+              <option value="opcao1">Homem</option>
+              <option value="opcao2">Mulher</option>
+              <option value="opcao2">Prefiro não me identificar</option>
+            </select>
+                  
+        </form>
+        <button id="calcularImc">Entrar</button>    
+      </div>
+    </main>
+    <footer class="rodape">
+
+    </footer>
+    <footer class="direitos">
+
+    </footer>
+</body>
+<script>
+  let botaoEntrar = document.getElementById("calcularImc")
+  botaoEntrar.addEventListener("click", async()=>{
+    window.location.href = "./escolha.html";
+  })
+</script>
+</html>
+
